@@ -1,0 +1,17 @@
+.header {
+  background-image: linear-gradient(to bottom, #ececec -32%, #fff 124%);
+  box-shadow: 0 1px 4px 0 #0015291f;
+  height: 114px;
+  padding: 0 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  @media (min-width: 992px) {
+    justify-content: flex-start;
+    padding: 0 40px;
+  }
+  @media (min-width: 1200px) {
+    padding: 0 150px;
+  }
+}
