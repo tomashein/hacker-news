@@ -13,7 +13,9 @@ const App = () => {
   return (
     <>
       <AppHeader />
-      <TabToggle toggle={toggleTab} value={tab} />
+      <nav className={styles.nav}>
+        <TabToggle toggle={toggleTab} value={tab} />
+      </nav>
       <main className={styles.main}>
         <FavesProvider>
           {tab === Tab.all && <NewsTab />}

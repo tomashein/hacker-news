@@ -1,0 +1,22 @@
+.wrapper {
+  display: flex;
+  justify-content: center;
+  margin-top: 38px;
+}
+
+.button {
+  background-color: #ffffff;
+  border: 2px solid #d6d6d6;
+  border-radius: 4px;
+  color: #686868;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: 500;
+  height: 34px;
+  width: 240px;
+
+  &:hover {
+    border-color: #797979;
+  }
+}

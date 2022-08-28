@@ -10,14 +10,14 @@ const TabToggle = ({ toggle, value }: TabToggleProps) => {
   );
 
   return (
-    <div className={styles.container}>
+    <>
       <button className={getClasses(Tab.all)} onClick={toggle(Tab.all)} type="button">
         All
       </button>
       <button className={getClasses(Tab.faves)} onClick={toggle(Tab.faves)} type="button">
         My faves
       </button>
-    </div>
+    </>
   );
 };
 
