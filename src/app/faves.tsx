@@ -1,4 +1,4 @@
-import { createContext, ReactNode, useCallback, useMemo, useState } from 'react';
+import { createContext, MouseEvent, ReactNode, useCallback, useMemo, useState } from 'react';
 import { buildFaves } from '@helpers/faves';
 import { News } from '@types';
 
@@ -8,7 +8,8 @@ const FavesProvider = ({ children }: FavesProviderType) => {
   const [faves, setFavorites] = useState(buildFaves());
 
   const toggleFave = useCallback(
-    (news: News) => () => {
+    (news: News) => (e: MouseEvent) => {
+      e.stopPropagation();
       setFavorites((prev) => {
         const index = prev.findIndex((fav) => fav.objectID === news.objectID);
         if (index > -1) {
@@ -43,7 +44,7 @@ export default FavesProvider;
 
 export type FavesContextType = {
   faves: News[];
-  toggleFave: (news: News) => () => void;
+  toggleFave: (news: News) => (e: MouseEvent) => void;
 };
 
 type FavesProviderType = {
