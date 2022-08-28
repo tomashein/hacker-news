@@ -1,0 +1,51 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 70px;
+}
+
+.button {
+  background-color: transparent;
+  border: 2px solid #d6d6d6;
+  box-sizing: content-box;
+  color: #606060;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: 500;
+  padding: 0;
+  height: 30px;
+  line-height: 30px;
+  width: 98px;
+
+  &:first-child {
+    border-radius: 4px 0 0 4px;
+    border-right: 0;
+  }
+
+  &:last-child {
+    border-radius: 0 4px 4px 0;
+    border-left: 0;
+  }
+
+  &:hover {
+    border-color: var(--blue);
+  }
+}
+
+.button_active {
+  border-color: var(--blue);
+  color: var(--blue);
+
+  &:first-child {
+    border-right: 2px solid;
+  }
+
+  &:last-child {
+    border-left: 2px solid;
+  }
+}
