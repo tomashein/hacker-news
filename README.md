@@ -44,6 +44,7 @@ Modern browsers (not IE).
 
 ### File/Folder Structure
 
+```
 ├── src                    # Source files
 │   ├── app                # Main entry point
 │   ├── assets             # Fonts and images
@@ -55,6 +56,7 @@ Modern browsers (not IE).
 │   ├── types              # Shared types
 │   └── main.tsx           # App bootstrap
 └── index.html             # Html entry point
+```
 
 ### Demo
 
