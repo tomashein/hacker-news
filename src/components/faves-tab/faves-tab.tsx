@@ -1,7 +1,17 @@
+import NewsCard from '@components/news-card';
+import useFaves from '@hooks/useFaves';
 import styles from './faves-tab.module.css';
 
 const FavesTab = () => {
-  return <div className={styles.grid}>faves</div>;
+  const { faves } = useFaves();
+
+  return (
+    <div className={styles.grid}>
+      {faves.map((fave, index) => (
+        <NewsCard news={fave} key={fave.objectID} index={index} />
+      ))}
+    </div>
+  );
 };
 
 export default FavesTab;
