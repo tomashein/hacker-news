@@ -1,14 +1,18 @@
 .wrapper {
   display: flex;
   justify-content: center;
-  margin-top: 70px;
+  margin-top: 40px;
+
+  @media (min-width: 992px) {
+    margin-top: 70px;
+  }
 }
 
 .button {
-  background-color: #ffffff;
-  border: 2px solid #d6d6d6;
+  background-color: white;
+  border: 2px solid var(--white-dark);
   border-radius: 4px;
-  color: #686868;
+  color: var(--gray);
   cursor: pointer;
   font-family: inherit;
   font-size: 14px;
@@ -17,6 +21,6 @@
   width: 240px;
 
   &:hover {
-    border-color: #797979;
+    border-color: var(--gray-light);
   }
 }

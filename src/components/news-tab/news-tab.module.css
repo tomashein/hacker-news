@@ -1,6 +1,11 @@
 .filters {
   display: flex;
+  justify-content: center;
   margin-top: -34px;
+
+  @media (min-width: 992px) {
+    justify-content: flex-start;
+  }
 }
 
 .grid {

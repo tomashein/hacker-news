@@ -1,5 +1,5 @@
 .button {
-  background-color: transparent;
+  background-color: var(--white-light);
   border: none;
   cursor: pointer;
   line-height: 0;

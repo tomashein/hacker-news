@@ -25,9 +25,7 @@ const NewsCard = ({ news, index }: NewsCardProps) => {
         </div>
         <h2 className={styles.title}>{news.story_title}</h2>
       </div>
-      <div className={styles.fave}>
-        <FavesToggle news={news} />
-      </div>
+      <FavesToggle news={news} />
     </article>
   );
 };

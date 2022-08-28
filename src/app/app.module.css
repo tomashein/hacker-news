@@ -2,11 +2,15 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 70px;
+  margin-top: 40px;
+
+  @media (min-width: 992px) {
+    margin-top: 70px;
+  }
 }
 
 .main {
-  padding: 70px 15px;
+  padding: 70px 20px 40px 20px;
 
   @media (min-width: 992px) {
     padding: 70px 40px;
