@@ -1,6 +1,7 @@
 /* eslint-disable jsx-a11y/no-noninteractive-element-to-interactive-role */
 import DateIcon from '@assets/icon-date.svg';
 import FavesToggle from '@components/faves-toggle';
+import { timeAgo } from '@helpers/news';
 import { News } from '@types';
 import styles from './news-card.module.css';
 
@@ -20,7 +21,7 @@ const NewsCard = ({ news, index }: NewsCardProps) => {
     >
       <div className={styles.data}>
         <div className={styles.meta}>
-          <DateIcon /> by {news.author}
+          <DateIcon /> {timeAgo(news.created_at)} by {news.author}
         </div>
         <h2 className={styles.title}>{news.story_title}</h2>
       </div>

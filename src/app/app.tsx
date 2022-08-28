@@ -3,8 +3,8 @@ import FavesTab from '@components/faves-tab';
 import NewsTab from '@components/news-tab';
 import TabToggle from '@components/tab-toggle';
 import FavesProvider from '@context/faves';
-import useTabs from '@hooks/useTabs';
 import { Tab } from '@helpers/tabs';
+import useTabs from '@hooks/useTabs';
 import styles from './app.module.css';
 
 const App = () => {
